@@ -109,7 +109,7 @@ _For example above, I will configurate the .env file like this:_
     npm start
    ```
 _NOTE: YOU CAN ADJUST THE CODE TO RUN THE TEST WITHOUT REDIS AND SEE WHAT HAPPENED WHEN YOU RESTART THE SEVER_
-### About the data flow
+### About data flow
 
 When a user first access the website, he doesn't have a session yet, so he will sent a request to the server to assign him a session. The server will query for userdata to the database and save the received infor as a session, the session is created and saved inside MemotyStore or temporary file or database or cache like redis (server). The server afterthat will send back a sessionID and from that point onward, the client will sent the request with sessionID attached in the header.   
 <p align="right">(<a href="#top">back to top</a>)</p>
